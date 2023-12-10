@@ -1,6 +1,16 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-animation:after {
+    content: "";
+    --angle: 0deg;
+    border-radius: 0.6rem;
+    @apply absolute inset-0 z-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+}
+
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;
