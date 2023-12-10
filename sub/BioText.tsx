@@ -14,22 +14,23 @@ const BioText = () => {
             className='  mb-10 pt-10 mt-4 px-4 text-2xl font-medium sm:text-4xl  '>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
                 As-salamu alaykum, {""}
-            </span>
+            </span>{" "}
             I am {""}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-                Fahim. <br />
+                Fahim.{""}
             </span>
-            I am a
+            <br />
+            {""} I am a {""}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-                {" "}
                 MERN Stack Development.
-            </span>{" "}
-            with
+                <br />
+            </span>
+            with{""}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-                {""}2 years
+                {""} 2 years{" "}
             </span>
             of experience.
-            <br /> I enjoy building sites. My focus is on
+            <br /> Life runs on Code. My focus is on
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
                 {" "}
                 React(Next js)
