@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const BioImage = () => {
     return (
         <div className='flex items-center justify-center '>
-            <div className=' pt-28'>
+            <div className='pt-30'>
                 <motion.div
                     className=' '
                     initial={{ opacity: 0, scale: 0 }}
