@@ -2,6 +2,8 @@
 import Bio from "@/components/bio";
 import Image from "next/image";
 import fVideo from "@/public/f.gif";
+import SectionDivider from "@/components/Section-divider";
+import About from "@/components/About";
 
 export default function Home() {
     return (
@@ -14,6 +16,8 @@ export default function Home() {
                 className='top-1  m-4 fiexd left-1   '
             /> */}
             <Bio />
+            <SectionDivider />
+            <About />
         </main>
     );
 }
