@@ -9,9 +9,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75 }}
             className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40'>
-            <h2 className='text-3xl font-bold capitalize mb-8 italic underline'>
-                About Me
-            </h2>
+            <h2 className='text-3xl font-bold uppercase mb-8'>About Me</h2>
             <p className='mb-3'>
                 Hasibur Rahman Fahim is a skilled and dedicated MEAN stack
                 developer with a passion for creating dynamic and efficient web

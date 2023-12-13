@@ -5,7 +5,12 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
-// import rmtdevImg from "@/public/rmtdev.png";
+import p1 from "@/public/p1.png";
+import p2 from "@/public/p2.png";
+import p3 from "@/public/p3.png";
+import p4 from "@/public/p4.png";
+import p5 from "@/public/p5.png";
+import p6 from "@/public/p6.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -63,20 +68,48 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
-    // {
-    //     title: "rmtDev",
-    //     description:
-    //         "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    //     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    //     imageUrl: rmtdevImg,
-    // },
-    // {
-    //     title: "Word Analytics",
-    //     description:
-    //         "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    //     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    //     imageUrl: wordanalyticsImg,
-    // },
+    {
+        title: "rmtDev",
+        description:
+            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+        imageUrl: p1,
+    },
+    {
+        title: "Word Analytics",
+        description:
+            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        imageUrl: p2,
+    },
+    {
+        title: "Food",
+        description:
+            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+        imageUrl: p3,
+    },
+    {
+        title: "Portfolio",
+        description:
+            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        imageUrl: p4,
+    },
+    {
+        title: "Space",
+        description:
+            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+        imageUrl: p5,
+    },
+    {
+        title: "movie",
+        description:
+            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        imageUrl: p6,
+    },
 ] as const;
 
 export const skillsData = [

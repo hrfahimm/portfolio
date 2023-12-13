@@ -18,7 +18,7 @@ export default function bio() {
     return (
         <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
             <div className='flex items-center justify-center '>
-                <div className='pt-28'>
+                <div className='pt-32'>
                     <motion.div
                         className=' '
                         initial={{ opacity: 0, scale: 0 }}
@@ -46,10 +46,10 @@ export default function bio() {
                     duration: 0.5,
                     delay: 0.7,
                 }}
-                className='  mb-10 pt-10 mt-4 px-4 text-2xl font-medium sm:text-4xl  '>
-                As-salamu alaykum, I am Fahim.
+                className='mb-10 pt-10 mt-4 px-4 text-2xl font-medium sm:text-4xl gap-2  '>
+                <span className=''>As-salamu alaykum, I am Fahim.</span>
                 <br />
-                <span className='font-bold italic'> Life Run On Code</span>
+                <span className='p-12 font-bold italic'> Life Run On Code</span>
             </motion.p>
 
             <motion.div

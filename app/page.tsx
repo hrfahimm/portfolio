@@ -4,6 +4,7 @@ import Image from "next/image";
 import fVideo from "@/public/f.gif";
 import SectionDivider from "@/components/Section-divider";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <Bio />
             <SectionDivider />
             <About />
+            <Projects />
         </main>
     );
 }
