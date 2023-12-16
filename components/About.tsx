@@ -2,13 +2,17 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useRef } from "react";
 export default function About() {
+ 
     return (
         <motion.section
+            id="about"
+             
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75 }}
-            className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40'>
+            className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-32'>
             <h2 className='text-3xl font-bold uppercase mb-8'>About Me</h2>
             <p className='mb-3'>
                 Hasibur Rahman Fahim is a skilled and dedicated MEAN stack
