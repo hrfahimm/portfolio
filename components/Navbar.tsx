@@ -9,6 +9,7 @@ import { ActiveSectionContext } from "@/context/active-section-context";
 
 const Navbar = () => {
 
+
     return (
         <header className='z-[999] relative'>
             <motion.div

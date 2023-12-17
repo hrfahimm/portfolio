@@ -2,7 +2,7 @@
 'use client'
 
 import { links } from '@/lib/data'
-import React, { useState, createContext } from 'react'
+import React, { useState, createContext, useContext } from 'react'
 
 
 
@@ -31,4 +31,16 @@ export default function ActiveSectionProvider({
     }}>
         {children}
     </ActiveSectionContext.Provider>
+}
+
+export function useActiveSectionContext() {
+
+    const context = useContext(ActiveSectionContext)
+
+    if (context === null) {
+        throw new Error(
+            "useActiveContext must be use with an Active Section provider"
+        )
+    }
+    return context
 }
