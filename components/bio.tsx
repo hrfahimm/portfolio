@@ -4,19 +4,30 @@ import Image from "next/image";
 import fahim from "@/public/fahim.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import BsArrowRight from "react-icons";
-import arrow from "@/public/arrow.png";
 import github from "@/public/gitblack.jpg";
 import linkin from "@/public/linkedin.jpg";
-import cv from "@/public/fahim.jpg";
 import { TbArrowBigRightLinesFilled } from "react-icons/tb";
 import { FaFileArrowDown } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
-import { IoLogoLinkedin } from "react-icons/io5";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-export default function bio() {
+
+
+export default function Intro() {
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+    });
+    const { setActiveSection } = useActiveSectionContext();
+    useEffect(() => {
+        if (inView) {
+            setActiveSection("Home")
+        }
+    }, [inView, setActiveSection]);
+
     return (
-        <section id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
+        <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
             <div className='flex items-center justify-center '>
                 <div className='pt-32'>
                     <motion.div

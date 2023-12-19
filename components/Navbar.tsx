@@ -1,14 +1,13 @@
-/** @format */
+
 "use client";
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useContext, useState } from "react";
 import clsx from 'clsx'
-import { ActiveSectionContext } from "@/context/active-section-context";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 const Navbar = () => {
-
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
     return (
         <header className='z-[999] relative'>
@@ -31,10 +30,16 @@ const Navbar = () => {
                             className='h-3/4 flex items-center justify-center relative'
                             key={link.hash}>
                             <Link
-                                className={clsx('flex w-full items-center justify-center px-3 py-3 hover:text-gray-950  rounded-full ', {
-                                    "text-gray-950 ": activeSection === link.name
-                                })}
-                                onClick={() => setActiveSection(link.name)}
+                                className={clsx('flex w-full items-center justify-center p-3 hover:text-gray-950 transition',
+                                    {
+                                        "text-gray-950 ": activeSection === link.name,
+                                    }
+                                )}
+                                onClick={() => {
+                                    setActiveSection(link.name),
+                                        setTimeOfLastClick(Date.now())
+                                }
+                                }
                                 href={link.hash}>
 
                                 {link.name}

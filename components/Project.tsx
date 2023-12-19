@@ -23,6 +23,9 @@ export default function Project({
 	const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1])
 
 
+
+
+
 	return (
 		<motion.div
 			className="group   mb-5 sm:mb-8 last:mb-0" style={{
