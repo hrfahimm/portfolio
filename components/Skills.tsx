@@ -1,20 +1,96 @@
-
 'use client'
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/hooks/hooks";
+import SkillsProvider from "./SkillsProvider";
+import { Backend_skill, Frontend_skill, Other_skill, Skill_data } from "@/utility/skills-logo";
+import { useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 
 export default function Skills() {
-    const { ref, inView } = useInView({
-        threshold: 0.75,
-    });
-    const { setActiveSection } = useActiveSectionContext();
-    useEffect(() => {
-        if (inView) {
-            setActiveSection("Skills")
-        }
-    }, [inView, setActiveSection]);
 
-    return <div ref={ref} className="h-[100rem] mt-[100rem]">Skills</div>;
+
+
+
+    const { ref } = useSectionInView("Skills", 0.5)
+
+    return <section
+        id='skills'
+        ref={ref}
+        className='flex flex-col items-center justify-center gap-7 h-full relative overflow-hidden  leading-8 sm:mb-40  scroll-mt-32 mt-10'>
+        <h2 className='text-3xl text-center font-extrabold uppercase m-8 p-5'>Skills</h2>
+        <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
+            {Skill_data.map((image, index) => (
+                <SkillsProvider
+                    src={image.Image}
+                    key={index}
+                    width={image.width}
+                    height={image.height}
+                    index={index}
+                />
+            ))}
+        </div>
+        <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
+            {Frontend_skill.map((image, index) => (
+                <SkillsProvider
+                    src={image.Image}
+                    key={index}
+                    width={image.width}
+                    height={image.height}
+                    index={index}
+                />
+            ))}
+        </div>
+        <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
+            {Backend_skill.map((image, index) => (
+                <SkillsProvider
+                    src={image.Image}
+                    key={index}
+                    width={image.width}
+                    height={image.height}
+                    index={index}
+                />
+            ))}
+        </div>
+
+        <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
+            {Other_skill.map((image, index) => (
+                <SkillsProvider
+                    src={image.Image}
+                    key={index}
+                    width={image.width}
+                    height={image.height}
+                    index={index}
+                />
+            ))}
+        </div>
+
+    </section>
 }
+
+
+
+{/* <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
+            {Full_stack.map((image, index) => (
+                <SkillsProvider
+                    src={image.Image}
+                    key={index}
+                    width={image.width}
+                    height={image.height}
+                    index={index}
+                />
+            ))}
+        </div> */}
+
+{/* <div className='w-full h-full absolute '>
+            <div className='w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover'>
+                <video
+                    src='/cards-video.webm'
+                    className='w-full h-auto'
+                    preload='false'
+                    playsInline
+                    loop
+                    muted
+                    autoPlay
+                />
+            </div>
+        </div> */}

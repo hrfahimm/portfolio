@@ -1,5 +1,5 @@
 'use client'
-import type { SectionName } from '@/app/hooks/types';
+import type { SectionName } from '@/hooks/types';
 import React, { useState, createContext, useContext } from 'react'
 
 type ActiveSectionContextProviderProps = {

@@ -1,14 +1,11 @@
 
 "use client";
-
-import { useSectionInView } from "@/app/hooks/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/hooks/hooks";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+
 
 export default function About() {
-    const { ref } = useSectionInView("About")
+    const { ref } = useSectionInView("About", 0.5)
 
 
 
@@ -37,6 +34,7 @@ export default function About() {
                 continuous learning and problem-solving makes him a valuable
                 asset in delivering innovative and reliable solutions.
             </p>
+
         </motion.section>
     );
 }

@@ -8,25 +8,13 @@ import github from "@/public/gitblack.jpg";
 import linkin from "@/public/linkedin.jpg";
 import { TbArrowBigRightLinesFilled } from "react-icons/tb";
 import { FaFileArrowDown } from "react-icons/fa6";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import { useSectionInView } from "@/app/hooks/hooks";
+import { useSectionInView } from "@/hooks/hooks";
 
 
 
 export default function Intro() {
-    const { ref } = useSectionInView("Home")
+    const { ref } = useSectionInView("Home", 0.5)
 
-    // const { ref, inView } = useInView({
-    //     threshold: 0.5,
-    // });
-    // const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-    // useEffect(() => {
-    //     if (inView && Date.now() - timeOfLastClick > 1000) {
-    //         setActiveSection("Home")
-    //     }
-    // }, [inView, setActiveSection, timeOfLastClick]);
 
     return (
         <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
@@ -44,9 +32,9 @@ export default function Intro() {
                         <Image
                             src={fahim}
                             alt='fahimImage'
-                            className='rounded-b-full object-cover shadow-2xl from-purple-500 via-teal-500  to-cyan-500  p-0.5 bg-gradient-to-r   '
-                            width='200'
-                            height='200'
+                            className='rounded-full object-cover shadow-2xl p-0.5 bg-gradient-to-r   '
+                            width='300'
+                            height='300'
                             quality='95'
                         />
                     </motion.div>

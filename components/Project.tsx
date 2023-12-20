@@ -29,7 +29,7 @@ export default function Project({
 
 	return (
 		<motion.div
-			className="group   mb-5 sm:mb-8 last:mb-0" style={{
+			className="group  mb-5 sm:mb-8 last:mb-0" style={{
 				scale: scaleProgess,
 				opacity: opacityProgess,
 			}}
