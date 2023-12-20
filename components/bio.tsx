@@ -11,20 +11,22 @@ import { FaFileArrowDown } from "react-icons/fa6";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { useSectionInView } from "@/app/hooks/hooks";
 
 
 
 export default function Intro() {
+    const { ref } = useSectionInView("Home")
 
-    const { ref, inView } = useInView({
-        threshold: 0.5,
-    });
-    const { setActiveSection } = useActiveSectionContext();
-    useEffect(() => {
-        if (inView) {
-            setActiveSection("Home")
-        }
-    }, [inView, setActiveSection]);
+    // const { ref, inView } = useInView({
+    //     threshold: 0.5,
+    // });
+    // const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+    // useEffect(() => {
+    //     if (inView && Date.now() - timeOfLastClick > 1000) {
+    //         setActiveSection("Home")
+    //     }
+    // }, [inView, setActiveSection, timeOfLastClick]);
 
     return (
         <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>

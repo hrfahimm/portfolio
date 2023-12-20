@@ -1,12 +1,6 @@
-
 'use client'
-
-import { links } from '@/lib/data'
+import type { SectionName } from '@/app/hooks/types';
 import React, { useState, createContext, useContext } from 'react'
-
-
-
-type SectionName = typeof links[number]["name"]
 
 type ActiveSectionContextProviderProps = {
     children: React.ReactNode;
@@ -36,12 +30,15 @@ export default function ActiveSectionProvider({
                 setActiveSection,
                 timeOfLastClick,
                 setTimeOfLastClick
-
             }}>
             {children}
         </ActiveSectionContext.Provider>
     )
 }
+
+//============================================================================================================================================//
+//============================================================================================================================================//
+
 
 export function useActiveSectionContext() {
 
