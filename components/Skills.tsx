@@ -2,22 +2,19 @@
 import { useSectionInView } from "@/hooks/hooks";
 import SkillsProvider from "./SkillsProvider";
 import { Backend_skill, Frontend_skill, Other_skill, Skill_data } from "@/utility/skills-logo";
-import { useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
 
 export default function Skills() {
-
-
-
 
     const { ref } = useSectionInView("Skills", 0.5)
 
     return <section
         id='skills'
         ref={ref}
-        className='flex flex-col items-center justify-center gap-7 h-full relative overflow-hidden  leading-8 sm:mb-40  scroll-mt-32 mt-10'>
+        className='  flex flex-col items-center justify-center gap-7 h-full relative overflow-hidden  leading-8 sm:mb-40  scroll-mt-32 mt-10'>
+
         <h2 className='text-3xl text-center font-extrabold uppercase m-8 p-5'>Skills</h2>
+
         <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
             {Skill_data.map((image, index) => (
                 <SkillsProvider

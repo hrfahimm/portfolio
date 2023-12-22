@@ -10,14 +10,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
     return (
-        <main className='flex flex-col items-center px-4'>
-            {/* <Image
-                src={fVideo}
-                alt='logo'
-                width={80}
-                height={80}
-                className='top-1  m-4 fiexd left-1   '
-            /> */}
+        <main className='flex flex-col items-center px-4'>S
             <Intro />
             <SectionDivider />
             <About />
