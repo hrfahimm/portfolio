@@ -13,7 +13,7 @@ export default function Skills() {
         ref={ref}
         className='  flex flex-col items-center justify-center gap-7 h-full relative overflow-hidden  leading-8 sm:mb-40  scroll-mt-32 mt-10'>
 
-        <h2 className='text-3xl text-center font-extrabold uppercase m-8 p-5'>Skills</h2>
+        <h2 className='text-5xl text-center font-extrabold uppercase m-8 p-5'>Skills</h2>
 
         <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
             {Skill_data.map((image, index) => (

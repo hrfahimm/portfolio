@@ -4,7 +4,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-
 import p1 from "@/public/p1.png";
 import p2 from "@/public/p2.png";
 import p3 from "@/public/p3.png";
@@ -47,6 +46,7 @@ export const experiencesData = [
         description:
             "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
         icon: React.createElement(LuGraduationCap),
+        //icon: <LuGraduationCap />,
         date: "2019",
     },
     {
@@ -346,6 +346,19 @@ export const Backend_skill = [
     // },
 ];
 
+
+export const Other_skill = [
+    {
+        skill_name: "Figma",
+        Image: "/figma.png",
+        width: 50,
+        height: 50,
+    },
+];
+
+
+
+
 // export const Full_stack = [
 //     {
 //         skill_name: "React Native",
@@ -373,12 +386,3 @@ export const Backend_skill = [
 //         height: 50,
 //     },
 // ];
-
-export const Other_skill = [
-    {
-        skill_name: "Figma",
-        Image: "/figma.png",
-        width: 50,
-        height: 50,
-    },
-];
