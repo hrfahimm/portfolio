@@ -5,6 +5,11 @@
 html{
   ---line-color:#e5e7eb
 }
+.borderBlack{
+  @apply border border-black/10
+}
+
+
 
 /* .bg-animation:after {
     content: "";
