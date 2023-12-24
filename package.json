@@ -9,6 +9,8 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@react-email/components": "^0.0.12",
+        "@react-email/tailwind": "^0.0.13",
         "@react-three/drei": "^9.90.0",
         "@react-three/fiber": "^8.15.12",
         "@types/three": "^0.159.0",
