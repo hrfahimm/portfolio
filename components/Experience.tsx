@@ -11,9 +11,10 @@ import 'react-vertical-timeline-component/style.min.css';
 
 export default function Experience() {
     const { ref } = useSectionInView("Experience", 0.5)
+    
 
     return (
-        <section className="scroll-mt-28 mb-28 sm:mb-40 " id="experience" ref={ref}>
+        <section className="scroll-mt-28 h-[100rem] !mb-28 sm:mb-40 " id="experience" ref={ref}>
             <h2 className='text-5xl text-center font-extrabold uppercase m-8 p-5'>Experience</h2>
             <VerticalTimeline className="text-black" lineColor="">
 

@@ -9,10 +9,13 @@ import linkin from "@/public/linkedin.jpg";
 import { TbArrowBigRightLinesFilled } from "react-icons/tb";
 import { FaFileArrowDown } from "react-icons/fa6";
 import { useSectionInView } from "@/hooks/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 
 
 export default function Intro() {
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
+
     const { ref } = useSectionInView("Home", 0.5)
 
 
@@ -63,6 +66,10 @@ export default function Intro() {
                 }}>
                 <Link
                     href='#contact'
+                    onClick={() => {
+                        setActiveSection('Contact')
+                        setTimeOfLastClick(Date.now())
+                    }}
                     className='cursor-pointer  group text-white bg-gray-800 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-gray-900 active:scale-105 transition '>
                     Contact Me Here
                     <TbArrowBigRightLinesFilled className='opacity-70 group-hover:translate-x-1 transition  ' />
