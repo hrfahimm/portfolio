@@ -13,25 +13,25 @@ type ContactFormEmailProps = {
 
 
 export default function ContcatFormEmail({ message, senderEmail }: ContactFormEmailProps) {
-    return <Html>
-        <Html />
-        <Preview> New Message From Your Portfolio site</Preview>
+    return (
+        <Html>
+            <Preview> New Message From Your Portfolio site</Preview>
 
-        <Tailwind>
-            <Body>
-                <Container>
-                    <Section>
-                        <Heading>you reacived the flowing message from contact form </Heading>
-                        <Text>{message}</Text>
-                        <Hr />
-                        <Text>
-                            the sender is email is : {senderEmail}
-                        </Text>
-                    </Section>
-                </Container>
-            </Body>
-        </Tailwind >
-    </Html >
+            <Tailwind>
+                <Body className="bg-gray-100 h-[500px]" key={senderEmail}>
+                    <Container>
+                        <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-xl ">
+                            <Heading className="leading-tight text-cyan-50 "> Sended By Portfolio Contact from </Heading>
+                            <Text className="font-semibold ">{message}</Text>
+                            <Hr />
+                            <Text className="font-bold italic ">
+                                The Sender Email is : {senderEmail}
+                            </Text>
+                        </Section>
+                    </Container>
+                </Body>
+            </Tailwind >
+        </Html >)
 
 }
 

@@ -219,18 +219,28 @@ export const Skill_data = [
 
 export const Socials = [
     {
-        name: "Discord",
-        src: "/instagram.svg",
+        name: "Instagram",
+        src: "/insta.png",
+            width: 30,
+        height: 30,
     },
     {
         name: "Facebook",
-        src: "/facebook.svg",
+        src: "/fb.webp",
+            width: 30,
+        height: 30,
     },
     {
-        name: "Instagram",
-        src: "/discord.svg",
+        name: "LinkedIn",
+        src: "/linkedin.jpg",
+            width: 30,
+        height: 30,
     },
 ];
+
+// import fb from "@/public/fb.webp";
+// import li from "@/public/linkedin.jpg";
+// import ins from "@/public/insta.png";
 
 export const Frontend_skill = [
     {

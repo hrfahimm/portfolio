@@ -5,6 +5,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ActiveSectionProvider from "@/context/active-section-context";
+import toast, { Toaster } from 'react-hot-toast';
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +30,8 @@ export default function RootLayout({
                 <ActiveSectionProvider>
                     <Navbar />
                     {children}
+                    <Footer />
+                    <Toaster position='bottom-center' />
                 </ActiveSectionProvider>
 
             </body>
