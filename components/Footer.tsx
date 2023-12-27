@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
         <div className="p-2">
             <small className="py-2">
-                &copy; 0000 fahim. All rights reserved
+                &copy; {(new Date().getFullYear())} fahim. All rights reserved
             </small>
             <p className="text-xs text-gray-500">
                 <span className="underline font-semibold px-1">

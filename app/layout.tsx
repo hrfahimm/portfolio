@@ -33,7 +33,6 @@ export default function RootLayout({
                     <Footer />
                     <Toaster position='bottom-center' />
                 </ActiveSectionProvider>
-
             </body>
         </html>
     );
