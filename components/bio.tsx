@@ -43,18 +43,23 @@ export default function Intro() {
                     </motion.div>
                 </div>
             </div>
-            <motion.p
+            <motion.div
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{
                     duration: 0.5,
                     delay: 0.7,
                 }}
-                className='mb-10 pt-10 mt-4 px-4 text-2xl font-medium sm:text-4xl gap-2  '>
-                <span className=''>As-salamu alaykum, I am Fahim.</span>
-                <br />
-                <span className='p-12 font-bold italic'> Life Run On Code</span>
-            </motion.p>
+                className='mb-10 pt-10 mt-4 px-4 text-2xl font-medium sm:text-4xl gap-2   '>
+
+                <div className="flex sm:flex-row flex-col sm:gap-2 py-4">
+                    <p className=''>As-salamu alaykum,</p>
+                    <p className=''> I am Fahim.</p>
+                </div>
+
+                <p className='font-bold italic'> Life Run On Code</p>
+
+            </motion.div>
 
             <motion.div
                 className='pt-8 flex  flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium'
@@ -70,18 +75,18 @@ export default function Intro() {
                         setActiveSection('Contact')
                         setTimeOfLastClick(Date.now())
                     }}
-                    className='cursor-pointer  group text-white bg-gray-800 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-gray-900'>
+                    className='cursor-pointer font-semibold group text-white bg-gray-800 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-gray-900'>
                     Contact Me Here
                     <TbArrowBigRightLinesFilled className='opacity-70 group-hover:translate-x-1 transition  ' />
                 </Link>
-                <a
+                <Link
                     href='/fahim.jpg'
                     download
-                    className='cursor-pointer group text-black bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition '>
+                    className='cursor-pointer group text-black font-semibold  bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition '>
                     Download CV{" "}
                     <FaFileArrowDown className='opacity-70 group-hover:translate-y-1 transition  ' />{" "}
-                </a>
-                <a
+                </Link>
+                <Link
                     className=""
                     href='https://linkedin.com/hrfahimm/'
                     target='_blank'>
@@ -93,8 +98,8 @@ export default function Intro() {
                         width='45'
                         height='45'
                     />
-                </a>
-                <a
+                </Link>
+                <Link
 
                     href='https://github.com/hrfahimm/'
                     target='_blank'>
@@ -105,7 +110,7 @@ export default function Intro() {
                         width='45'
                         height='45'
                     />
-                </a>
+                </Link>
             </motion.div>
         </section>
     );

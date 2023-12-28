@@ -1,9 +1,12 @@
 'use client'
-import { projectsData } from "@/lib/data";
+import { projectsData } from "@/utility/data";
 import { useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import github from "@/public/gitblack.jpg";
+
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -31,12 +34,25 @@ export default function Project({
 			}}
 			ref={ref}>
 			<section
-				className=' bg-purple-100 sm:max-w-[42rem] max-w-35rem p-8  border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] h-[16rem]
+				className=' bg-purple-100 sm:max-w-[42rem] max-w-35rem p-8  border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[22rem] h-[18rem]
 				 hover:bg-purple-200 transition rounded-2xl group-even:pl-8  dark:bg-[#a8e5e5ec] dark:hover:bg-[#a9e9e9]'>
 				<div
-					className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[17rem] max-w-[15rem]
+					className=' px-4 sm:pl-10 sm:pr-2 sm:pt-2 sm:max-w-[17rem] max-w-[15rem]
                             flex flex-col h-full  group-even:ml-[18rem] '>
 					<h3 className='sm:text-3xl text-xl font-bold uppercase dark:text-gray-800'>{title}</h3>
+					<Link
+						href='https://github.com/hrfahimm/'
+						target='_blank'
+						className='text-xs cursor-pointer underline text-black flex items-center gap-2 rounded-full outline-none'>Sourch Code{"->"}
+						<Image
+							src={github}
+							alt='arrow'
+							className=' rounded-xl outline-none focus:scale-110  hover:scale-110 active:scale-105 transition'
+							width='20'
+							height='20'
+						/>
+					</Link>
+
 					<p className='mt-2 text-[10px] sm:text-base leading-relaxed text-gray-700 pb-2'>
 						{description}
 					</p>
@@ -49,13 +65,21 @@ export default function Project({
 							</li>
 						))}
 					</ul>
+
+
 				</div>
-				<Image
-					src={imageUrl}
-					alt='Project'
-					quality={95}
-					className='absolute top-8 -right-40 sm:w-[27rem] w-[25rem] rounded-t-lg shadow-xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-focus:translate-y-3  group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40 '
-				/>
+				<Link
+					href='https://github.com/hrfahimm/'
+					target='_blank'>
+					<Image
+						src={imageUrl}
+						alt='Project'
+						quality={95}
+						className='absolute top-8 -right-40 sm:w-[30rem] w-[25rem] rounded-t-lg shadow-xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-focus:translate-y-3  group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40 '
+					/>
+				</Link>
+
+
 			</section>
 		</motion.div>
 	);

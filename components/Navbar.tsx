@@ -1,6 +1,6 @@
 
 "use client";
-import { links } from "@/lib/data";
+import { links } from "@/utility/data";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import clsx from 'clsx'

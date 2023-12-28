@@ -25,6 +25,7 @@
         "react-hot-toast": "^2.4.1",
         "react-icons": "^4.12.0",
         "react-intersection-observer": "^9.5.3",
+        "react-starfield": "^1.0.3",
         "react-vertical-timeline-component": "^3.6.0",
         "resend": "^0.16.0",
         "sweetalert2": "^11.10.2",

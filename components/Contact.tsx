@@ -3,7 +3,7 @@ import { sendEmail } from "@/actions/sendEmail";
 import { useSectionInView } from "@/hooks/hooks";
 import { motion } from "framer-motion";
 import React from "react";
-import Submit from "./Submit";
+import Submit from "./sub/Submit";
 import toast from "react-hot-toast";
 export default function Contact() {
     const { ref } = useSectionInView("Contact", 0.2)

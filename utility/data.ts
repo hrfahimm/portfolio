@@ -1,15 +1,22 @@
 /** @format */
 
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+// import { CgWorkAlt } from "react-icons/cg";
+// import { FaReact } from "react-icons/fa";
+// import { LuGraduationCap } from "react-icons/lu";
 import p1 from "@/public/p1.png";
 import p2 from "@/public/p2.png";
 import p3 from "@/public/p3.png";
 import p4 from "@/public/p4.png";
 import p5 from "@/public/p5.png";
 import p6 from "@/public/p6.png";
+ import { LuGraduationCap } from "react-icons/lu";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa6";
+ 
+import corpcommentImg from "@/public/corpcomment.png";
+import rmtdevImg from "@/public/rmtdev.png";
+import wordanalyticsImg from "@/public/wordanalytics.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -40,30 +47,30 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
-    {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
-        description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019",
-    },
-    {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
-        description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-        icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
-    },
-    {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
-        description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2021 - present",
-    },
+  {
+    title: "Graduated bootcamp",
+    location: "Miami, FL",
+    description:
+      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019",
+  },
+  {
+    title: "Front-End Developer",
+    location: "Orlando, FL",
+    description:
+      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2019 - 2021",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "Houston, TX",
+    description:
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(FaReact),
+    date: "2021 - present",
+  },
 ] as const;
 
 export const projectsData = [
@@ -214,7 +221,7 @@ export const Skill_data = [
         width: 40,
         height: 40,
     },
-];
+]as const;
 
 export const Socials = [
     {
@@ -235,12 +242,9 @@ export const Socials = [
             width: 30,
         height: 30,
     },
-];
+] as const;
 
-// import fb from "@/public/fb.webp";
-// import li from "@/public/linkedin.jpg";
-// import ins from "@/public/insta.png";
-
+ 
 export const Frontend_skill = [
     {
         skill_name: "Html 5",
@@ -302,7 +306,7 @@ export const Frontend_skill = [
         width: 80,
         height: 80,
     },
-];
+] as const;
 
 export const Backend_skill = [
     {
@@ -353,7 +357,7 @@ export const Backend_skill = [
     //     width: 80,
     //     height: 80,
     // },
-];
+]as const;
 
 
 export const Other_skill = [
@@ -363,7 +367,7 @@ export const Other_skill = [
         width: 50,
         height: 50,
     },
-];
+] as const;
 
 
 

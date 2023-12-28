@@ -1,6 +1,6 @@
 'use client'
 import { useSectionInView } from "@/hooks/hooks";
-import SkillsProvider from "./SkillsProvider";
+import SkillsProvider from "./sub/SkillsProvider";
 import { Backend_skill, Frontend_skill, Other_skill, Skill_data } from "@/utility/skills-logo";
 
 
