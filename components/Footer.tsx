@@ -46,7 +46,7 @@ export default function Footer() {
                     About This Website :
                 </span>
                 <span className=" dark:text-gray-950">
-                    Build with React & Next.JS (App Router & Server Action ), Typescript ,Tailwind CSS ,Framer Motion, React Email & Resend , Vercel hosting,
+                    Build with React & Next.JS (App Router & Server Action ), Typescript ,Tailwind CSS ,Framer Motion, React Email & Resend , Vercel hosting.
                 </span>
             </p>
         </div>
