@@ -33,7 +33,7 @@ export default function Contact() {
             <h2 className='text-4xl font-bold mb-8 uppercase'>Contacts</h2>
             <p className=" ">
                 Please contact me direactly at
-                <a className="underline text-fuchsia-500 -mt-3 px-2 " href="mailto:hrfahimm@gmail.com"> {""} hrfahimm@gmail.com  {""}</a>
+                <a className="underline text-fuchsia-500 -mt-3 px-2 dark:text-cyan-500 " href="mailto:hrfahimm@gmail.com"> {""} hrfahimm@gmail.com  {""}</a>
                 or through this mail
             </p>
 
@@ -50,11 +50,11 @@ export default function Contact() {
                 }}
             >
 
-                <input className="h-14 rounded-xl borderBlack p-4 hover:border-gray-200 " type="email" placeholder="Your Email" name="senderEmail"
+                <input className="h-14 rounded-xl borderBlack p-4  dark:text-black   hover:border-gray-200 dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 dark:hover:bg-opacity-100 transition-all dark:outline-none" type="email" placeholder="Your Email" name="senderEmail"
                     required maxLength={500}
                 />
 
-                <textarea className="h-52 my-3 rounded-xl borderBlack p-4      " placeholder="Your Massage" required maxLength={5000} name="message" />
+                <textarea className="h-52 my-3 rounded-xl borderBlack p-4 dark:text-black    hover:border-gray-200 dark:bg-white dark:bg-opacity-90  dark:focus:bg-opacity-100 dark:hover:bg-opacity-100  transition-all dark:outline-none  " placeholder="Your Massage" required maxLength={5000} name="message" />
 
                 <Submit />
             </form>

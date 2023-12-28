@@ -16,6 +16,7 @@ export default function Skills() {
             <div className="mb-28 text-center leading-8 sm:mb-40 
             flex flex-col items-center justify-center gap-7 h-full relative overflow-hidden  ">
 
+
                 <h2 className='text-5xl text-center font-extrabold uppercase  p-5 '>Skills</h2>
 
                 <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
@@ -64,8 +65,6 @@ export default function Skills() {
                     ))}
                 </div>
             </div>
-
-
 
         </section>)
 }

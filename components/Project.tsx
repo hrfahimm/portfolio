@@ -31,13 +31,13 @@ export default function Project({
 			}}
 			ref={ref}>
 			<section
-				className=' bg-purple-100 sm:max-w-[42rem] max-w-38rem   border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] h-[16rem]
-				 hover:bg-purple-200 transition rounded-2xl group-even:pl-8 '>
+				className=' bg-purple-100 sm:max-w-[42rem] max-w-35rem p-8  border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] h-[16rem]
+				 hover:bg-purple-200 transition rounded-2xl group-even:pl-8  dark:bg-[#a8e5e5ec] dark:hover:bg-[#a9e9e9]'>
 				<div
 					className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[17rem] max-w-[15rem]
                             flex flex-col h-full  group-even:ml-[18rem] '>
-					<h3 className='sm:text-3xl text-xl font-semibold uppercase '>{title}</h3>
-					<p className='mt-2 text-[10px] sm:text-base leading-relaxed text-gray-700'>
+					<h3 className='sm:text-3xl text-xl font-bold uppercase dark:text-gray-800'>{title}</h3>
+					<p className='mt-2 text-[10px] sm:text-base leading-relaxed text-gray-700 pb-2'>
 						{description}
 					</p>
 					<ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto   '>
@@ -54,7 +54,7 @@ export default function Project({
 					src={imageUrl}
 					alt='Project'
 					quality={95}
-					className='absolute top-8 -right-40 sm:w-[27rem] w-[25rem] rounded-t-lg shadow-xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40 '
+					className='absolute top-8 -right-40 sm:w-[27rem] w-[25rem] rounded-t-lg shadow-xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-focus:translate-y-3  group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40 '
 				/>
 			</section>
 		</motion.div>

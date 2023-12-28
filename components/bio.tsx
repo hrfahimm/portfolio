@@ -70,18 +70,19 @@ export default function Intro() {
                         setActiveSection('Contact')
                         setTimeOfLastClick(Date.now())
                     }}
-                    className='cursor-pointer  group text-white bg-gray-800 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-gray-900 active:scale-105 transition '>
+                    className='cursor-pointer  group text-white bg-gray-800 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-gray-900'>
                     Contact Me Here
                     <TbArrowBigRightLinesFilled className='opacity-70 group-hover:translate-x-1 transition  ' />
                 </Link>
                 <a
                     href='/fahim.jpg'
                     download
-                    className='cursor-pointer group text-black bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition'>
+                    className='cursor-pointer group text-black bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition '>
                     Download CV{" "}
                     <FaFileArrowDown className='opacity-70 group-hover:translate-y-1 transition  ' />{" "}
                 </a>
                 <a
+                    className=""
                     href='https://linkedin.com/hrfahimm/'
                     target='_blank'>
                     {" "}
@@ -89,19 +90,20 @@ export default function Intro() {
                         src={linkin}
                         alt='arrow'
                         className='  rounded-3xl outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition'
-                        width='40'
-                        height='40'
+                        width='45'
+                        height='45'
                     />
                 </a>
                 <a
+
                     href='https://github.com/hrfahimm/'
                     target='_blank'>
                     <Image
                         src={github}
                         alt='arrow'
                         className=' rounded-3xl outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition'
-                        width='40'
-                        height='40'
+                        width='45'
+                        height='45'
                     />
                 </a>
             </motion.div>
