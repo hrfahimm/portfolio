@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return <footer className="items-center text-center">
-        <div className='flex flex-row justify-center flex-wrap mt-4 gap-6 items-center  py-2'>
+        <div className='flex flex-row justify-center flex-wrap mt-4 sm:gap-6 gap-7 items-center  py-2'>
             <Link className="transition-all focus:scale-110  hover:scale-110  active:scale-105 " href="https://facebook.com/hrfahimm" target='_blank'>
                 <Image
                     className="rounded-full"

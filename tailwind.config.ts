@@ -15,6 +15,19 @@ const config: Config = {
       },
     },
   },
+  boxShadow: {
+    before:'-10px 10px 0 #fff',
+    before2: '-10px -10px 0 #fff',
+    after: '-10px 10px 0 #fff',
+    after2: '-10px 10px 0 #232949',
+
+
+  },
+  colors: {
+    
+    
+  }
+,
   plugins: [],
   darkMode:'class'
 }

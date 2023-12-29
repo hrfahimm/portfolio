@@ -26,61 +26,51 @@ export default function Project({
 	const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1])
 	const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1])
 
+
 	return (
 		<motion.div
-			className="group  mb-5 sm:mb-8 last:mb-0" style={{
+			className='group  mb-5 sm:mb-8 last:mb-0'
+			style={{
 				scale: scaleProgess,
 				opacity: opacityProgess,
 			}}
 			ref={ref}>
 			<section
-				className=' bg-purple-100 sm:max-w-[42rem] max-w-35rem p-8  border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[22rem] h-[18rem]
-				 hover:bg-purple-200 transition rounded-2xl group-even:pl-8  dark:bg-[#a8e5e5ec] dark:hover:bg-[#a9e9e9]'>
-				<div
-					className=' px-4 sm:pl-10 sm:pr-2 sm:pt-2 sm:max-w-[17rem] max-w-[15rem]
-                            flex flex-col h-full  group-even:ml-[18rem] '>
-					<h3 className='sm:text-3xl text-xl font-bold uppercase dark:text-gray-800'>{title}</h3>
-					<Link
-						href='https://github.com/hrfahimm/'
-						target='_blank'
-						className='text-xs cursor-pointer underline text-black flex items-center gap-2 rounded-full outline-none'>Sourch Code{"->"}
-						<Image
-							src={github}
-							alt='arrow'
-							className=' rounded-xl outline-none focus:scale-110  hover:scale-110 active:scale-105 transition'
-							width='20'
-							height='20'
-						/>
-					</Link>
+				className=' bg-purple-100 sm:w-[600px] w-[400px] h-[300px] p-8  border border-black/5 overflow-hidden   relative  flex flex-row  hover:bg-purple-200 transition rounded-2xl  dark:bg-[#a8e5e5ec] dark:hover:bg-[#c8e4e4]'>
+				<div className=' px-2 w-[200px] sm:w-[300px] flex flex-col h-full  '>
+					<h3 className='  text-xl font-bold uppercase dark:text-gray-800'>{title}</h3>
 
-					<p className='mt-2 text-[10px] sm:text-base leading-relaxed text-gray-700 pb-2'>
-						{description}
-					</p>
-					<ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto   '>
+					<p className='mt-2 text-[10px]  leading-relaxed text-gray-700 pb-2'>{description}</p>
+					<ul className='flex flex-wrap mt-4 gap-2  '>
 						{tags.map((tag, index) => (
 							<li
 								key={index}
-								className='bg-black/[0.7] px-3 py-1 sm:text-[.7rem] text-[.5rem] uppercase tracking-wide text-white rounded-full'>
+								className='bg-black/[0.7] px-3 py-1 text-[.5rem] uppercase tracking-wide text-white rounded-full'>
 								{tag}
 							</li>
 						))}
 					</ul>
-
-
 				</div>
-				<Link
-					href='https://github.com/hrfahimm/'
-					target='_blank'>
-					<Image
-						src={imageUrl}
-						alt='Project'
-						quality={95}
-						className='absolute top-8 -right-40 sm:w-[30rem] w-[25rem] rounded-t-lg shadow-xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-focus:translate-y-3  group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40 '
-					/>
-				</Link>
-
+				<div className="w-[200px] sm:w-[300px]">
+					<Link
+						href='https://github.com/hrfahimm/'
+						target='_blank'>
+						<Image
+							src={imageUrl}
+							alt='Project'
+							quality={95}
+							className='absolute top-8 rounded-3xl w-full shadow-xl transition   '
+						/>
+					</Link>
+				</div>
 
 			</section>
 		</motion.div>
 	);
 }
+
+//
+{/* dark:bg-[#a8e5e5ec] dark:hover:bg-[#a9e9e9]   hover:bg-purple-200  bg-purple-100 
+style={{ backgroundImage: `url(${imageUrl})` }} 
+*/ }
+// 

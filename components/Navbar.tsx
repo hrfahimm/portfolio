@@ -32,7 +32,7 @@ const Navbar = () => {
                             <Link
                                 className={clsx('flex w-full items-center justify-center sm:p-3 p-5  hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-200',
                                     {
-                                        "text-gray-950 dark:text-gray-200 ": activeSection === link.name,
+                                        "text-gray-950 sm:text-gray-950 dark:text-white": activeSection === link.name,
                                     }
                                 )}
                                 onClick={() => {

@@ -19,28 +19,57 @@ export default function Projects() {
                     </React.Fragment>
                 ))}
             </div>
-            <div className="flex justify-around item center py-4">
-                <Link
-                    className='cursor-pointer group text-black font-semibold  bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition '
-                    href='https://github.com/hrfahimm/'
-                    target='_blank'>
-                    View ToDo
-                    <TfiMoreAlt className='opacity-70 group-hover:translate-x-1 transition  ' />{" "}
-
-                </Link>
-                <Link
-                    className='cursor-pointer group text-black font-semibold  bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition '
-                    href='https://github.com/hrfahimm/'
-                    target='_blank'>
-                    View More
-                    <TfiMoreAlt className='opacity-70 group-hover:translate-x-1 transition  ' />{" "}
-
-                </Link>
-
-            </div>
-
-
-
         </section>
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+
+
+
+
+
+
+
+
+//
+
+
+
+
+
+
+// <div className="flex justify-around item center py-4">
+//     <Link
+//         className='cursor-pointer group text-black font-semibold  bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition '
+//         href='https://github.com/hrfahimm/'
+//         target='_blank'>
+//         View ToDo
+//         <TfiMoreAlt className='opacity-70 group-hover:translate-x-1 transition  ' />{" "}
+
+//     </Link>
+//     <Link
+//         className='cursor-pointer group text-black font-semibold  bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition '
+//         href='https://github.com/hrfahimm/'
+//         target='_blank'>
+//         View More
+//         <TfiMoreAlt className='opacity-70 group-hover:translate-x-1 transition  ' />{" "}
+
+//     </Link>
+
+// </div>

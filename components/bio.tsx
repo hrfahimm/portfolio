@@ -62,7 +62,7 @@ export default function Intro() {
             </motion.div>
 
             <motion.div
-                className='pt-8 flex  flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium'
+                className='pt-8 flex  flex-col sm:flex-row  items-center justify-center sm:gap-3 gap-5 px-4 text-lg font-medium'
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{

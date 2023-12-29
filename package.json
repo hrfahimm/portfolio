@@ -29,6 +29,7 @@
         "react-vertical-timeline-component": "^3.6.0",
         "resend": "^0.16.0",
         "sweetalert2": "^11.10.2",
+        "swiper": "^11.0.5",
         "three": "^0.159.0"
     },
     "devDependencies": {
