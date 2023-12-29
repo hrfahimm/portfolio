@@ -18,7 +18,7 @@ export default function Experience() {
             <div className="mb-28 sm:mb-40">
                 <h2 className='text-5xl text-center font-extrabold uppercase m-8 p-5'>Experience</h2>
 
-                <VerticalTimeline className="text-black" lineColor="">
+                <VerticalTimeline className="text-black " lineColor="">
 
                     {experiencesData.map((item, index) => (
                         <React.Fragment key={index}>
@@ -37,13 +37,13 @@ export default function Experience() {
                                 date={item.date}
                                 icon={item.icon}
                                 iconStyle={{
-                                    background: theme === 'light' ? 'white' : 'rgba(255,255,255,0.15)',
+                                    background: theme === 'light' ? '#fff' : 'rgba(255,255,255,0.15)',
                                     fontSize: '1.5rem'
                                 }}
 
                             >
-                                <h3 className="capitalize font-semibold">{item.title}</h3>
-                                <p className="font-normal !mt-0">{item.location}</p>
+                                <h3 className="capitalize dark:text-gray-100 text-gray-700  font-semibold">{item.title}</h3>
+                                <p className="font-normal dark:text-gray-100 text-gray-700  !mt-0">{item.location}</p>
                                 <p className="font-normal !mt-1 dark:text-gray-100 text-gray-700  ">{item.description}</p>
                             </VerticalTimelineElement>
                         </React.Fragment>

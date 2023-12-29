@@ -48,27 +48,27 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated  ",
+    location: "Laxmipur Govt Collage",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "HSC Complited ,",
     icon: React.createElement(LuGraduationCap),
         date: "2019",
     
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "null",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "As an aspiring Frontend Developer, I'm passionate about creating user-centric experiences. Proficient in Next.js, React, and Tailwind CSS, I bring creativity and dedication to every project.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Mern-Stack Developer",
+    location: "null",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "As an aspiring MEARN Stack Developer, I'm passionate about crafting dynamic web solutions. Proficient in Next.js, React, MongoDB, and Node.js, I bring creativity and a commitment to learning in every projects.",
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
@@ -76,69 +76,69 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "rmtDev",
+        title: "Protfolio",
         description:
             "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+        tags: ["React", "TypeScript", "Next.js", "Tailwind",  "Framer"],
         imageUrl: p1,
         webUrl: "http://hrfahimm.vercel.app/",
         gitUrl:'https://github.com/hrfahimm/portfolio'
 
     },
     {
-        title: "Word Analytics",
+        title: "Mac Price",
         description:
             "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        tags: ["js", "css", "html",  ],
         imageUrl: p2,
-        webUrl: "http://hrfahimm.vercel.app/",
+        webUrl: "https://macprice.netlify.app/",
         gitUrl:'https://github.com/hrfahimm/portfolio'
 
     },
     {
-        title: "Food",
+        title: "Shoping Card",
         description:
             "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+        tags: ["React", 'vite','Tailwind',],
         imageUrl: p3,
-        webUrl: "http://hrfahimm.vercel.app/",
+        webUrl: "https://emajohn-router.netlify.app/shop",
         gitUrl:'https://github.com/hrfahimm/portfolio'
 
  
     },
     {
-        title: "Portfolio",
+        title: "Portfolio -> copy",
         description:
             "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        tags: ["React", "Next.js",   "Tailwind","Typescript", "Framer"],
         imageUrl: p4,
-        webUrl: "http://hrfahimm.vercel.app/",
+        webUrl: "https://hrfahimm2.vercel.app/",
         gitUrl:'https://github.com/hrfahimm/portfolio'
 
 
     },
     {
-        title: "Space",
+        title: "E-com",
         description:
             "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
         tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
         imageUrl: p5,
-        webUrl: "http://hrfahimm.vercel.app/",
+        webUrl: "https://clothing-appp.netlify.app/home",
         gitUrl:'https://github.com/hrfahimm/portfolio'
 
 
     },
-    {
-        title: "movie",
-        description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: p6,
-        webUrl: "http://hrfahimm.vercel.app/",
-        gitUrl:'https://github.com/hrfahimm/portfolio'
+    // {
+    //     title: "movie",
+    //     description:
+    //         "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    //     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    //     imageUrl: p6,
+    //     webUrl: "http://hrfahimm.vercel.app/",
+    //     gitUrl:'https://github.com/hrfahimm/portfolio'
 
 
-    },
+    // },
 ] as const;
 
 export const skillsData = [

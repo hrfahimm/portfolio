@@ -19,7 +19,7 @@ export default function Skills() {
 
                 <h2 className='text-5xl text-center font-extrabold uppercase  p-5 '>Skills</h2>
 
-                <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center '>
+                <div className='flex flex-row justify-around flex-wrap md:mt-4 mt-16 gap-5 items-center '>
                     {Skill_data.map((image, index) => (
                         <SkillsProvider
                             src={image.Image}
@@ -30,7 +30,7 @@ export default function Skills() {
                         />
                     ))}
                 </div>
-                <div className='flex flex-row justify-around flex-wrap mt-8 gap-5 items-center '>
+                <div className='flex flex-row justify-around flex-wrap md:mt-8 mt-16 gap-5 items-center '>
                     {Frontend_skill.map((image, index) => (
                         <SkillsProvider
                             src={image.Image}
@@ -41,7 +41,7 @@ export default function Skills() {
                         />
                     ))}
                 </div>
-                <div className='flex flex-row justify-around flex-wrap mt-8 gap-5 items-center '>
+                <div className='flex flex-row justify-around flex-wrap md:mt-8 mt-16 gap-5 items-center '>
                     {Backend_skill.map((image, index) => (
                         <SkillsProvider
                             src={image.Image}
@@ -53,7 +53,7 @@ export default function Skills() {
                     ))}
                 </div>
 
-                <div className='flex flex-row justify-around flex-wrap mt-8 gap-5 items-center '>
+                <div className='flex flex-row justify-around flex-wrap md:mt-8 mt-16 gap-5 items-center '>
                     {Other_skill.map((image, index) => (
                         <SkillsProvider
                             src={image.Image}
