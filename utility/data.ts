@@ -10,10 +10,10 @@ import p3 from "@/public/p3.png";
 import p4 from "@/public/p4.png";
 import p5 from "@/public/p5.png";
 import p6 from "@/public/p6.png";
- import { LuGraduationCap } from "react-icons/lu";
+import { LuGraduationCap } from "react-icons/lu";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa6";
- 
+
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -47,73 +47,84 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
-  {
-    title: "Graduated  ",
-    location: "Laxmipur Govt Collage",
-    description:
-      "HSC Complited ,",
-    icon: React.createElement(LuGraduationCap),
+    {
+        title: "Graduated  ",
+        location: "Laxmipur Govt Collage",
+        description:
+            "HSC Complited ,",
+        icon: React.createElement(LuGraduationCap),
         date: "2019",
-    
-  },
-  {
-    title: "Front-End Developer",
-    location: "null",
-    description:
-      "As an aspiring Frontend Developer, I'm passionate about creating user-centric experiences. Proficient in Next.js, React, and Tailwind CSS, I bring creativity and dedication to every project.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Mern-Stack Developer",
-    location: "null",
-    description:
-      "As an aspiring MEARN Stack Developer, I'm passionate about crafting dynamic web solutions. Proficient in Next.js, React, MongoDB, and Node.js, I bring creativity and a commitment to learning in every projects.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
+
+    },
+    {
+        title: "Front-End Developer",
+        location: "null",
+        description:
+            "As an aspiring Frontend Developer, I'm passionate about creating user-centric experiences. Proficient in Next.js, React, and Tailwind CSS, I bring creativity and dedication to every project.",
+        icon: React.createElement(CgWorkAlt),
+        date: "2019 - 2021",
+    },
+    {
+        title: "Mern-Stack Developer",
+        location: "null",
+        description:
+            "As an aspiring MEARN Stack Developer, I'm passionate about crafting dynamic web solutions. Proficient in Next.js, React, MongoDB, and Node.js, I bring creativity and a commitment to learning in every projects.",
+        icon: React.createElement(FaReact),
+        date: "2021 - present",
+    },
 ] as const;
 
 export const projectsData = [
     {
+        title: "Hotel Booking",
+        description:
+            "It is a hotel booking website, only room booked ang login is avaleable.",
+        tags: ["Next.js", "React", "TypeScript", , "Tailwind", "Framer", "sanity.io"],
+        imageUrl: p1,
+        webUrl: "https://hotel-bookingg.vercel.app/",
+        gitUrl: 'https://github.com/hrfahimm/hotel-booking'
+
+    },
+    {
         title: "Protfolio",
         description:
             "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind",  "Framer"],
+        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer"],
         imageUrl: p1,
         webUrl: "http://hrfahimm.vercel.app/",
-        gitUrl:'https://github.com/hrfahimm/portfolio'
+        gitUrl: 'https://github.com/hrfahimm/portfolio'
 
     },
+
     {
         title: "Mac Price",
         description:
             "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["js", "css", "html",  ],
+        tags: ["js", "css", "html",],
         imageUrl: p2,
         webUrl: "https://macprice.netlify.app/",
-        gitUrl:'https://github.com/hrfahimm/portfolio'
+        gitUrl: 'https://github.com/hrfahimm/portfolio'
 
     },
     {
         title: "Shoping Card",
         description:
             "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", 'vite','Tailwind',],
+        tags: ["React", 'vite', 'Tailwind',],
         imageUrl: p3,
         webUrl: "https://emajohn-router.netlify.app/shop",
-        gitUrl:'https://github.com/hrfahimm/portfolio'
+        gitUrl: 'https://github.com/hrfahimm/portfolio'
 
- 
+
     },
     {
         title: "Portfolio -> copy",
         description:
             "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js",   "Tailwind","Typescript", "Framer"],
+        tags: ["React", "Next.js", "Tailwind", "Typescript", "Framer"],
         imageUrl: p4,
         webUrl: "https://hrfahimm2.vercel.app/",
-        gitUrl:'https://github.com/hrfahimm/portfolio'
+        gitUrl: 'https://github.com/hrfahimm/portfolio'
 
 
     },
@@ -124,7 +135,7 @@ export const projectsData = [
         tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
         imageUrl: p5,
         webUrl: "https://clothing-appp.netlify.app/home",
-        gitUrl:'https://github.com/hrfahimm/portfolio'
+        gitUrl: 'https://github.com/hrfahimm/portfolio'
 
 
     },
@@ -244,30 +255,30 @@ export const Skill_data = [
         width: 40,
         height: 40,
     },
-]as const;
+] as const;
 
 export const Socials = [
     {
         name: "Instagram",
         src: "/insta.png",
-            width: 30,
+        width: 30,
         height: 30,
     },
     {
         name: "Facebook",
         src: "/fb.webp",
-            width: 30,
+        width: 30,
         height: 30,
     },
     {
         name: "LinkedIn",
         src: "/linkedin.jpg",
-            width: 30,
+        width: 30,
         height: 30,
     },
 ] as const;
 
- 
+
 export const Frontend_skill = [
     {
         skill_name: "Html 5",
@@ -380,7 +391,7 @@ export const Backend_skill = [
     //     width: 80,
     //     height: 80,
     // },
-]as const;
+] as const;
 
 
 export const Other_skill = [
