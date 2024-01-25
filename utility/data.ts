@@ -10,6 +10,7 @@ import p3 from "@/public/p3.png";
 import p4 from "@/public/p4.png";
 import p5 from "@/public/p5.png";
 import p6 from "@/public/p6.png";
+import p10 from "@/public/p10.png";
 import { LuGraduationCap } from "react-icons/lu";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa6";
@@ -80,7 +81,7 @@ export const projectsData = [
         description:
             "It is a hotel booking website, only room booked ang login is avaleable.",
         tags: ["Next.js", "React", "TypeScript", , "Tailwind", "Framer", "sanity.io"],
-        imageUrl: p1,
+        imageUrl: p10,
         webUrl: "https://hotel-bookingg.vercel.app/",
         gitUrl: 'https://github.com/hrfahimm/hotel-booking'
 
