@@ -84,7 +84,7 @@ export const projectsData = [
             "It is a zoom copy website, working on it. Can't Complite",
         tags: ["Next.js", "React", "TypeScript", , "Tailwind",],
         imageUrl: woom,
-        webUrl: "https://hotel-bookingg.vercel.app/",
+        webUrl: "https://woom.vercel.app/",
         gitUrl: 'https://github.com/hrfahimm/zoom'
 
     },
@@ -94,8 +94,8 @@ export const projectsData = [
             "It is a marketplace website, Can not complite . It is a Full Stack Project",
         tags: ["Next.js", "React", "TypeScript", , "Tailwind",],
         imageUrl: marketplace,
-        webUrl: "https://hotel-bookingg.vercel.app/",
-        gitUrl: 'https://github.com/hrfahimm/hotel-booking'
+        webUrl: "https://marketplace9.vercel.app/",
+        gitUrl: 'https://github.com/hrfahimm/marketplace'
 
     },
     {
