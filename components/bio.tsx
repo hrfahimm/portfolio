@@ -52,12 +52,12 @@ export default function Intro() {
                 }}
                 className='mb-10 pt-10 mt-4 px-4 text-2xl font-medium sm:text-4xl gap-2   '>
 
-                <div className="flex sm:flex-row flex-col sm:gap-2 py-4">
-                    <p className=''>As-salamu alaykum,</p>
-                    <p className=''> I am Fahim.</p>
+                <div className="flex items-center justify-center text-center sm:flex-row flex-col sm:gap-2 py-6">
+                    <p className='text-lg'>Assalamualaikum Warahmatullahi Wabarakatuh,</p>
+                    <p className='text-lg font-bold'> I am Fahim.</p>
                 </div>
 
-                <p className='font-bold italic'> Life Run On Code</p>
+                <p className='font-bold  '> Life Run On Code</p>
 
             </motion.div>
 

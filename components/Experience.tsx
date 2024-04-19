@@ -17,10 +17,14 @@ export default function Experience() {
         <section className="scroll-mt-28   " id="experience" ref={ref}>
             <div className="mb-28 sm:mb-40">
                 <h2 className='text-5xl text-center font-extrabold uppercase m-8 p-5'>Experience</h2>
+                <VerticalTimeline className="text-black  " lineColor="">
 
+                </VerticalTimeline>
+
+                <p className="items-center text-center p-[200px]  text-4xl ">Null</p>
                 <VerticalTimeline className="text-black " lineColor="">
 
-                    {experiencesData.map((item, index) => (
+                    {/* {experiencesData.map((item, index) => (
                         <React.Fragment key={index}>
                             <VerticalTimelineElement
                                 contentStyle={{
@@ -49,7 +53,7 @@ export default function Experience() {
                         </React.Fragment>
 
                     ))
-                    }
+                    } */}
                 </VerticalTimeline>
             </div>
 

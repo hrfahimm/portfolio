@@ -1,7 +1,7 @@
 'use client'
 import { useSectionInView } from "@/hooks/hooks";
 import SkillsProvider from "./sub/SkillsProvider";
-import { Backend_skill, Frontend_skill, Other_skill, Skill_data } from "@/utility/skills-logo";
+import { Backend_skill, Frontend_skill, Other_skill, Skill_data, external_skill } from "@/utility/skills-logo";
 
 
 export default function Skills() {
@@ -41,7 +41,18 @@ export default function Skills() {
                         />
                     ))}
                 </div>
-                <div className='flex flex-row justify-around flex-wrap md:mt-8 mt-16 gap-5 items-center '>
+                <div className='flex flex-row justify-around flex-wrap md:mt-4 mt-16 gap-5 items-center '>
+                    {external_skill.map((image, index) => (
+                        <SkillsProvider
+                            src={image.Image}
+                            key={index}
+                            width={image.width}
+                            height={image.height}
+                            index={index}
+                        />
+                    ))}
+                </div>
+                <div className='flex flex-row justify-around flex-wrap md:mt-6 mt-16 gap-5 items-center '>
                     {Backend_skill.map((image, index) => (
                         <SkillsProvider
                             src={image.Image}
@@ -53,7 +64,7 @@ export default function Skills() {
                     ))}
                 </div>
 
-                <div className='flex flex-row justify-around flex-wrap md:mt-8 mt-16 gap-5 items-center '>
+                <div className='flex flex-row justify-around flex-wrap md:mt-6 mt-16 gap-5 items-center '>
                     {Other_skill.map((image, index) => (
                         <SkillsProvider
                             src={image.Image}
