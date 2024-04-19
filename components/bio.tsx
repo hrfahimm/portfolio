@@ -80,7 +80,7 @@ export default function Intro() {
                     <TbArrowBigRightLinesFilled className='opacity-70 group-hover:translate-x-1 transition  ' />
                 </Link>
                 <Link
-                    href='/fahim-CV.pdf'
+                    href='/fahimCV.pdf'
                     download
                     className='cursor-pointer group text-black font-semibold  bg-cyan-100 flex px-7 py-3 items-center gap-2 rounded-full outline-none focus:scale-110  hover:scale-110 hover:bg-cyan-200 active:scale-105 transition '>
                     Download CV{" "}
