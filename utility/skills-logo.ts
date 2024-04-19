@@ -48,8 +48,9 @@ export const Frontend_skill = [
         height: 80,
     },
 
+
     {
-        skill_name: "Tailwind Css",
+        skill_name: "firebase",
         Image: "/firebase.png",
         width: 50,
         height: 50,
@@ -62,19 +63,19 @@ export const Frontend_skill = [
     },
 
     {
-        skill_name: "TanStack Query",
+        skill_name: "vercel",
         Image: "/vercel.png",
         width: 80,
         height: 80,
     },
     {
-        skill_name: "Type Script",
+        skill_name: "netlify",
         Image: "/netlify.svg",
         width: 80,
         height: 80,
     },
     {
-        skill_name: "Next js 14",
+        skill_name: "axios",
         Image: "/axios.png",
         width: 80,
         height: 80,
