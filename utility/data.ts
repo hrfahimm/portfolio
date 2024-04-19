@@ -11,6 +11,8 @@ import p4 from "@/public/p4.png";
 import p5 from "@/public/p5.png";
 import p6 from "@/public/p6.png";
 import p10 from "@/public/p10.png";
+import marketplace from "@/public/marketplace.png";
+import woom from "@/public/woom.png";
 import { LuGraduationCap } from "react-icons/lu";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa6";
@@ -76,6 +78,26 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "WOOM ",
+        description:
+            "It is a zoom copy website, working on it. Can't Complite",
+        tags: ["Next.js", "React", "TypeScript", , "Tailwind",],
+        imageUrl: woom,
+        webUrl: "https://hotel-bookingg.vercel.app/",
+        gitUrl: 'https://github.com/hrfahimm/zoom'
+
+    },
+    {
+        title: "Marketplace",
+        description:
+            "It is a marketplace website, Can not complite . It is a Full Stack Project",
+        tags: ["Next.js", "React", "TypeScript", , "Tailwind",],
+        imageUrl: marketplace,
+        webUrl: "https://hotel-bookingg.vercel.app/",
+        gitUrl: 'https://github.com/hrfahimm/hotel-booking'
+
+    },
     {
         title: "Hotel Booking",
         description:
