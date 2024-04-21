@@ -53,8 +53,13 @@ export default function Intro() {
                 className='mb-10 pt-10 mt-4 px-4 text-2xl font-medium sm:text-4xl gap-2   '>
 
                 <div className="flex items-center justify-center text-center sm:flex-row flex-col sm:gap-2 py-6">
-                    <p className='text-lg'>Assalamualaikum Warahmatullahi Wabarakatuh,</p>
-                    <p className='text-lg font-bold'> I am Fahim.</p>
+                    <p className='text-sm  ' >Assalamualaikum Warahmatullahi Wabarakatuh,
+                        <br /><br />
+                        <span className="text-lg font-bold tracking-wider"> I am Fahim , A MERN Stack & Front-End Developer</span>.
+                    </p>
+
+
+                    <p className='text-lg font-bold'> </p>
                 </div>
 
                 <p className='font-bold  '> Life Run On Code</p>

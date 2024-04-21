@@ -15,7 +15,7 @@ export const Skill_data = [
     {
         skill_name: "Java Script",
         Image: "/js2.svg",
-        width: 80,
+        width: 90,
         height: 90,
     },
     {
@@ -44,16 +44,16 @@ export const Frontend_skill = [
     {
         skill_name: "Java Script",
         Image: "/tailwind.png",
-        width: 80,
-        height: 80,
+        width: 85,
+        height: 85,
     },
 
 
     {
         skill_name: "firebase",
-        Image: "/firebase.png",
-        width: 50,
-        height: 50,
+        Image: "/firebase.svg",
+        width: 80,
+        height: 580,
     },
     {
         skill_name: "Material UI",
@@ -77,8 +77,8 @@ export const Frontend_skill = [
     {
         skill_name: "axios",
         Image: "/axios.png",
-        width: 80,
-        height: 80,
+        width: 85,
+        height: 85,
     },
     {
         skill_name: "Next js 14",
@@ -166,8 +166,8 @@ export const external_skill = [
     {
         skill_name: "Next js 14",
         Image: "/swiper.svg",
-        width: 80,
-        height: 80,
+        width: 75,
+        height: 75,
     },
     {
         skill_name: "React",
@@ -178,8 +178,8 @@ export const external_skill = [
     {
         skill_name: "Next js 14",
         Image: "/reactform.svg",
-        width: 80,
-        height: 80,
+        width: 75,
+        height: 75,
     },
     {
         skill_name: "Next js 14",
@@ -190,8 +190,8 @@ export const external_skill = [
     {
         skill_name: "Next js 14",
         Image: "/framer.png",
-        width: 80,
-        height: 80,
+        width: 78,
+        height: 78,
     },
     {
         skill_name: "Next js 14",
